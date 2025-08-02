@@ -245,9 +245,6 @@ The application is fully responsive and works on:
 - Debounced auto-save to reduce API calls
 - Optimized bundle size
 
-## 📄 License
-
-This project is licensed under the MIT License.
 
 ## 👨‍💻 Author
 
