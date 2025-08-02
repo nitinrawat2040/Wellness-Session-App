@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # 🌿 Wellness Session Platform
 
 A secure, full-stack wellness session management platform built with React, Node.js, Express.js and MongoDB. Users can create, manage, and discover wellness sessions with features like auto-save, draft management, and JWT authentication.
@@ -258,3 +259,6 @@ This project is licensed under the MIT License.
 - 🧑‍💻 [GitHub](https://github.com/nitinrawat2040)
 
 **Built with ❤️ for the wellness community** 
+=======
+# Wellness-Session-App
+>>>>>>> 329de218f3550fc03581e9f40004f1d217b0d090
