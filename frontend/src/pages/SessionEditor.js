@@ -115,26 +115,24 @@ const SessionEditor = () => {
 
     // Simple auto-save effect - triggers after 5 seconds of any form change
     useEffect(() => {
-        if (autoSaveTimer) {
-            clearTimeout(autoSaveTimer);
-        }
+        let timer;
 
-        // Auto-save if we have a title (URL is optional for drafts)
         if (formData.title.trim()) {
-            const timer = setTimeout(() => {
+            timer = setTimeout(() => {
                 if (autoSaveRef.current) {
                     autoSaveRef.current();
                 }
-            }, 5000); // 5 second delay
+            }, 5000);
             setAutoSaveTimer(timer);
         }
 
         return () => {
-            if (autoSaveTimer) {
-                clearTimeout(autoSaveTimer);
+            if (timer) {
+                clearTimeout(timer);
             }
         };
-    }, [formData.title, formData.json_file_url, formData.tags]); // Only depend on form data, not the function
+    }, [formData.title, formData.json_file_url, formData.tags]);
+
 
     const handleInputChange = (e) => {
         const { name, value } = e.target;
