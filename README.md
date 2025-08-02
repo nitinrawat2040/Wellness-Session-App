@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # 🌿 Wellness Session Platform
 
 A secure, full-stack wellness session management platform built with React, Node.js, Express.js and MongoDB. Users can create, manage, and discover wellness sessions with features like auto-save, draft management, and JWT authentication.
@@ -142,14 +141,14 @@ A secure, full-stack wellness session management platform built with React, Node
 ### Frontend (Netlify)
 1. Build the React app:
    ```bash
-   cd client
+   cd frontend
    npm run build
    ```
 
 2. Deploy to Netlify:
    - Connect your GitHub repository
-   - Set build command: `cd client && npm install && npm run build`
-   - Set publish directory: `client/build`
+   - Set build command: `cd frontend && npm install && npm run build`
+   - Set publish directory: `frontend/build`
    - Set environment variables for production API URL
 
 ### Backend (Render)
@@ -246,9 +245,6 @@ The application is fully responsive and works on:
 - Debounced auto-save to reduce API calls
 - Optimized bundle size
 
-## 📄 License
-
-This project is licensed under the MIT License.
 
 ## 👨‍💻 Author
 
@@ -260,5 +256,3 @@ This project is licensed under the MIT License.
 
 **Built with ❤️ for the wellness community** 
 =======
-# Wellness-Session-App
->>>>>>> 329de218f3550fc03581e9f40004f1d217b0d090
