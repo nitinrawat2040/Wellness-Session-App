@@ -40,6 +40,10 @@ app.use(express.urlencoded({ extended: true }));
 app.use('/api/auth', authRoutes);
 app.use('/api/sessions', sessionRoutes);
 
+app.get('/', (req, res) => {
+    res.send('Backend is working. Visit the frontend for the UI.');
+});
+
 // Health check endpoint
 app.get('/api/health', (req, res) => {
     res.json({ status: 'OK', message: 'Wellness Session API is running' });
