@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useCallback, useRef } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import axios from 'axios';
-import { Save, Send, ArrowLeft, X } from 'lucide-react';
+import { Save, Send, X } from 'lucide-react';
 import toast from 'react-hot-toast';
 import config from '../config';
 

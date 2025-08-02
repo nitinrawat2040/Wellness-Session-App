@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useParams, useNavigate } from 'react-router-dom';
-import { Lock, Eye, EyeOff, ArrowLeft, CheckCircle } from 'lucide-react';
+import { Lock, Eye, ArrowLeft, CheckCircle } from 'lucide-react';
 import axios from 'axios';
 import toast from 'react-hot-toast';
 import config from '../config';

@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import axios from 'axios';
-import { Plus, Edit, Trash2, Calendar, Tag, Eye, X } from 'lucide-react';
+import { Plus, Edit, Trash2, Calendar, Tag } from 'lucide-react';
 import toast from 'react-hot-toast';
 import config from '../config';
 
