@@ -1,0 +1,16 @@
+{
+    "short_name": "Wellness Sessions",
+    "name": "Wellness Session Platform",
+    "icons": [
+        {
+            "src": "favicon.ico",
+            "sizes": "64x64 32x32 24x24 16x16",
+            "type": "image/x-icon"
+        }
+    ],
+    "start_url": ".",
+    "display": "standalone",
+    "theme_color": "#67b847",
+    "background_color": "#c0ecc0",
+    "description": "A platform for creating and sharing wellness sessions"
+}
