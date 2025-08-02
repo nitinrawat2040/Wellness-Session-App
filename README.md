@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # 🌿 Wellness Session Platform
 
 A secure, full-stack wellness session management platform built with React, Node.js, Express.js and MongoDB. Users can create, manage, and discover wellness sessions with features like auto-save, draft management, and JWT authentication.
