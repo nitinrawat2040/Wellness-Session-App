@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useCallback } from 'react';
 import { Link, useParams, useNavigate } from 'react-router-dom';
 import { Lock, Eye, ArrowLeft, CheckCircle } from 'lucide-react';
 import axios from 'axios';
@@ -36,11 +36,7 @@ const ResetPassword = () => {
     const [tokenValid, setTokenValid] = useState(false);
     const [success, setSuccess] = useState(false);
 
-    useEffect(() => {
-        verifyToken();
-    }, [token]);
-
-    const verifyToken = async () => {
+    const verifyToken = useCallback(async () => {
         try {
             await axios.get(`${config.apiUrl}/auth/verify-reset-token/${token}`);
             setTokenValid(true);
@@ -50,7 +46,11 @@ const ResetPassword = () => {
         } finally {
             setVerifying(false);
         }
-    };
+    }, [token]);
+
+    useEffect(() => {
+        verifyToken();
+    }, [verifyToken]);
 
     const handleChange = (e) => {
         setFormData({
