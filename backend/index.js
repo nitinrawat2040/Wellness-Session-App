@@ -18,7 +18,7 @@ app.set('trust proxy', 1);
 app.use(helmet());
 app.use(cors({
     origin: process.env.NODE_ENV === 'production'
-        ? ['https://your-netlify-app.netlify.app']
+        ? ['https://wellness-session-manager.netlify.app']
         : ['http://localhost:3000'],
     credentials: true
 }));

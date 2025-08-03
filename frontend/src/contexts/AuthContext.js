@@ -17,6 +17,7 @@ export const AuthProvider = ({ children }) => {
     const [user, setUser] = useState(null);
     const [loading, setLoading] = useState(true);
 
+    console.log('API URL in use:', config.apiUrl);
     // Set up axios defaults
     useEffect(() => {
         const token = localStorage.getItem('token');
