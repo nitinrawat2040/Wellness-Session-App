@@ -199,7 +199,7 @@ wellness-session-manager/
 │   ├── routes/            # API routes
 │   ├── middleware/        # Custom middleware
 │   └── ...
-├── package.json
+├── .gitignore
 └── README.md
 ```
 
