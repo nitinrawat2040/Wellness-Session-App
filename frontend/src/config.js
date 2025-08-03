@@ -4,7 +4,7 @@ const config = {
         apiUrl: 'http://localhost:5000/api'
     },
     production: {
-        apiUrl: 'https://wellness-session-manager.onrender.com/api'
+        apiUrl: 'http://localhost:5000/api'  // Temporarily changed for testing
     }
 };
 

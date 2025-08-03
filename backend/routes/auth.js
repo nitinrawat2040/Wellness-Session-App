@@ -176,7 +176,7 @@ router.post('/forgot-password', [
 
         // Send email using SendGrid
         try {
-            const resetUrl = `${process.env.CLIENT_URL || 'http://localhost:3000'}/reset-password/${resetToken}`;
+            const resetUrl = `${process.env.CLIENT_URL || 'https://wellness-session-manager.netlify.app'}/reset-password/${resetToken}`;
 
             const msg = {
                 to: email,
