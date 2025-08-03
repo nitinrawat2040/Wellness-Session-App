@@ -4,7 +4,7 @@ const config = {
         apiUrl: 'http://localhost:5000/api'
     },
     production: {
-        apiUrl: 'http://localhost:5000/api'  // Temporarily changed for testing
+        apiUrl: process.env.REACT_APP_API_URL || 'https://internship-projects-ksab.onrender.com/api'
     }
 };
 
