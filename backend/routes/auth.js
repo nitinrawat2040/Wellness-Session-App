@@ -217,6 +217,8 @@ router.post('/forgot-password', [
 
         } catch (emailError) {
             // Log the reset link to console as fallback
+            console.error('SendGrid error:', emailError.response ? emailError.response.body : emailError);
+            console.log('Reset link for manual sending:', resetUrl);
         }
 
         res.json({
